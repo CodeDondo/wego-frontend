@@ -33,7 +33,7 @@ export const NavBar = () => {
         <Navigation>
           <ul>
             <NavLink to="/">
-              <img src={Logo} alt="NavLogo" style={{ width: "120px" }} />
+              <img src={Logo} alt="NavLogo" />
             </NavLink>
             <li><NavLink to="/lift">Find et lift</NavLink></li>
             <li><NavLink to="/howtouse">Sådan virker det</NavLink></li>
