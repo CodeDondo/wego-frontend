@@ -22,6 +22,12 @@ export const Navigation = styled.nav`
   }
 `;
 
+export const Button = styled.button`
+  background-color: white;
+  border: none;
+  font-size: medium;
+  color: black;
+`
 
 
 export const BurgerWrapper = styled.div`
