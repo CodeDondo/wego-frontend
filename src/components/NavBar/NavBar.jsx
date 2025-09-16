@@ -4,10 +4,13 @@ import Logo from "../../assets/WegoLogo.png";
 import { BurgerWrapper, Navigation, Button } from "./NavBarStyled";
 import { useState, useEffect } from "react";
 import { HowToUse } from "../HowToUse/HowToUse";
+import { LoginForm } from "../LoginForm/LoginForm";
+import { LoginModal } from "../LoginForm/LoginModal";
 
 export const NavBar = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
   const [showHowToUse, setShowHowToUse] = useState(false);
+  const [showLogin, setShowLogin] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
@@ -27,7 +30,9 @@ export const NavBar = () => {
             </NavLink>
             <NavLink to="/lift" className="menu-item">Find et lift</NavLink>
             <NavLink to="/minside" className="menu-item">Min side</NavLink>
-            <NavLink to="/login" className="menu-item">Login</NavLink>
+            <div className="menu-item">
+              <LoginForm />
+            </div>
           </Menu>
         </BurgerWrapper>
       ) : (
@@ -38,12 +43,18 @@ export const NavBar = () => {
             </NavLink>
             <li><NavLink to="/lift">Find et lift</NavLink></li>
             <li>
-              <Button onClick={() => setShowHowToUse(true)}>Sådan virker det</Button>
+              <NavLink>
+                <Button onClick={() => setShowHowToUse(true)}>Sådan virker det</Button>
+              </NavLink>
             </li>
             <li><NavLink to="/minside">Min side</NavLink></li>
           </ul>
           <ul>
-            <li><NavLink to="/login">Login</NavLink></li>
+            <li>
+              <NavLink>
+                <Button onClick={() => setShowLogin(true)}>Login</Button>
+              </NavLink>
+            </li>
           </ul>
         </Navigation>
       )}
@@ -55,6 +66,11 @@ export const NavBar = () => {
           isMobile={isMobile}
         />
       )}
+
+      <LoginModal 
+        isVisible={showLogin}
+        onClose={() => setShowLogin(false)}
+      />
     </>
   );
 };
