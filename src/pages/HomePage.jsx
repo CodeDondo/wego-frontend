@@ -1,6 +1,7 @@
 import { ContentWrapper } from "../components/ContentWrapper/ContentWrapper"
 import { NavBar } from "../components/NavBar/NavBar"
 import { Main } from "../components/Main/Main"
+import { Footer } from "../components/Footer/Footer"
 
 export const HomePage = () => {
     return (
@@ -10,6 +11,7 @@ export const HomePage = () => {
                 
                 <NavBar />
                 <Main />
+                <Footer />
         </ContentWrapper>
     )
 }
