@@ -17,7 +17,7 @@ export const LoginForm = () => {
           "Content-type": "application/json",
         },
         body: JSON.stringify({
-          username: formData.username, 
+          username: formData.username,
           password: formData.password,
         }),
       });
