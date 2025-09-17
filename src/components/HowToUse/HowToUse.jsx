@@ -1,28 +1,46 @@
+import { useContentList } from "../../hooks/useContent"
 import styles from "./HowToUse.module.scss"
 
 export const HowToUse = ({ isVisible, onClose, isMobile }) => {
+  const { ContentList, loading, error } = useContentList()
+
+  if (loading) return <div>loading...</div>
+  if (error) return <div>{error}</div>
+
   if (isMobile) {
     return (
-      <section className={styles.howToUse}>
-        <h1>Sådan virker det</h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean aliquam leo libero, vitae ullamcorper nunc rutrum sit amet. Integer lobortis diam eu justo fermentum, lacinia laoreet urna efficitur. Mauris sit amet urna vulputate, vulputate turpis a, interdum elit. Fusce quis rutrum odio. Integer nec euismod felis. Praesent ex justo, ultrices a neque in, facilisis condimentum ex. Cras iaculis eget nulla a vestibulum. Donec suscipit eu nunc in dictum. Vestibulum congue scelerisque velit, ut tempus urna dictum eu. Morbi id nisi risus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer feugiat dui id elit placerat, at volutpat nunc rhoncus.
-        </p>
-      </section>
+      <>
+        {ContentList.map(item => {
+          const { id, title, content } = item
+          return (
+            <section key={id} className={styles.howToUse}>
+              <h1>{title}</h1>
+              <p>{content}</p>
+            </section>
+          )
+        })}
+      </>
     )
   }
 
-  if (!isVisible) return null
 
+
+  if (!isVisible) return null
   return (
-    <div className={styles.overlay}>
-      <section className={styles.modal}>
-        <button className={styles.close} onClick={onClose}>×</button>
-        <h1>Sådan virker det</h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean aliquam leo libero, vitae ullamcorper nunc rutrum sit amet. Integer lobortis diam eu justo fermentum, lacinia laoreet urna efficitur. Mauris sit amet urna vulputate, vulputate turpis a, interdum elit. Fusce quis rutrum odio. Integer nec euismod felis. Praesent ex justo, ultrices a neque in, facilisis condimentum ex. Cras iaculis eget nulla a vestibulum. Donec suscipit eu nunc in dictum. Vestibulum congue scelerisque velit, ut tempus urna dictum eu. Morbi id nisi risus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer feugiat dui id elit placerat, at volutpat nunc rhoncus.
-        </p>
-      </section>
-    </div>
+    <>
+      {ContentList.map(item => {
+        const { id, title, content } = item
+
+        return (
+          <div key={id} className={styles.overlay}>
+            <section className={styles.modal}>
+              <button className={styles.close} onClick={onClose}>×</button>
+              <h1>{title}</h1>
+              <p>{content}</p>
+            </section>
+          </div>
+        )
+      })}
+    </>
   )
 }

@@ -8,6 +8,28 @@ export const LoginForm = () => {
     const onSubmit = async formData => {
         const URL = 'http://localhost:4000/api/auth/login'
 
+    try {
+      const response = await fetch(URL, {
+        method: "POST",
+        headers: {
+          Accept: "application/json",
+          "Content-type": "application/json",
+        },
+        body: JSON.stringify({
+          username: formData.username,
+          password: formData.password,
+        }),
+      });
+
+      if (response.ok) {
+        const token = await response.json();
+        sessionStorage.setItem("access_token", JSON.stringify(token));
+        setLoginData(token);
+      } else {
+        throw new Error("Login fejlede");
+      }
+    } catch (error) {
+      console.error(error);
         try {
             const response = await fetch(URL, {
                 method: "POST",
