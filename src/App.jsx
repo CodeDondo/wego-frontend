@@ -1,9 +1,9 @@
 import { Routes, Route } from "react-router-dom"
 import { HomePage } from "./pages/HomePage"
-import { ProductPage } from "./pages/ProductPage"
-import { LoginPage } from "./pages/LoginPage"
-import { ItemListSort } from './components/ItemListSort/ItemListSort'
-import { ItemDetails } from "./components/ItemDetails/ItemDetails"
+import { LiftPage } from "./pages/LiftPage"
+import { MainLayout } from "./Layouts/MainLayout"
+import { LiftList } from "./components/LiftList/LiftList"
+import { LiftDetails } from "./components/LiftDetails/LiftDetails"
 import "./reset.scss"
 
 function App() {
@@ -11,13 +11,14 @@ function App() {
   return (
     <>
       <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/products" element={<ProductPage />}>
-            <Route index element={<ItemListSort />}></Route>
-            <Route path=":slug" element={<ItemDetails />}></Route>
+        <Route path="/" element={<MainLayout />}>
+          <Route index element={<HomePage />} />
+          <Route path="/lift" element={<LiftPage />}>
+            <Route index element={<LiftList />} />
           </Route>
-          <Route path="/login" element={<LoginPage />} />
-      </Routes>
+            <Route path="/lift/:lift_id" element={<LiftDetails />} />
+        </Route>
+      </Routes >
     </>
   )
 }

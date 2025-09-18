@@ -15,7 +15,7 @@ export const HowToUse = ({ isVisible, onClose, isMobile }) => {
           return (
             <section key={id} className={styles.howToUse}>
               <h1>{title}</h1>
-              <p>{content}</p>
+              <p dangerouslySetInnerHTML={{ __html: content }}></p>
             </section>
           )
         })}
@@ -36,7 +36,7 @@ export const HowToUse = ({ isVisible, onClose, isMobile }) => {
             <section className={styles.modal}>
               <button className={styles.close} onClick={onClose}>×</button>
               <h1>{title}</h1>
-              <p>{content}</p>
+              <p dangerouslySetInnerHTML={{ __html: content }}></p>
             </section>
           </div>
         )

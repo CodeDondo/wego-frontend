@@ -1,11 +1,5 @@
-.FooterImg{
-    display: block;
-    position: absolute;
-    width: 100%;
-    bottom: -70px;
-    z-index: 100;
-
-    @media(max-width: 768px){
-        bottom: -285px;
-    }
+.FooterImg {
+  display: block;
+  width: 100%;
+  height: auto;
 }
