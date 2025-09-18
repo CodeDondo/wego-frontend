@@ -1,0 +1,114 @@
+.section {
+  max-width: 700px;
+  margin: 2rem auto;
+  background: #fff;
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  font-family: "Arial", sans-serif;
+  color: #333;
+}
+
+.backButton {
+  margin-bottom: 1rem;
+
+  img {
+    width: 28px;
+    height: auto;
+    cursor: pointer;
+  }
+}
+
+.header {
+  margin-bottom: 1rem;
+
+  h2 {
+    font-size: 1.4rem;
+    margin: 0;
+    font-weight: bold;
+  }
+
+  p {
+    color: #666;
+    font-size: 0.9rem;
+    margin-top: 0.3rem;
+  }
+}
+
+.comment {
+  margin: 1.5rem 0;
+  background: #f9f9f9;
+  border-left: 4px solid #00aaff;
+  padding: 1rem;
+  border-radius: 8px;
+
+  h3 {
+    margin-top: 0;
+    font-size: 1rem;
+    color: #111;
+  }
+
+  p {
+    margin: 0.5rem 0 0;
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+}
+
+.driver {
+  margin-top: 2rem;
+
+  h2 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+
+  .driverCard {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: #f9f9f9;
+    padding: 1rem;
+    border-radius: 12px;
+
+    figure {
+      margin: 0;
+      img {
+        width: 70px;
+        height: 70px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 2px solid #ddd;
+      }
+    }
+
+    .info {
+      flex: 1;
+
+      p {
+        margin: 0.2rem 0;
+      }
+
+      .stars {
+        color: #ffc107;
+        font-size: 1rem;
+        margin: 0.2rem 0;
+      }
+
+      button {
+        margin-top: 0.5rem;
+        padding: 0.6rem 1rem;
+        background: #00aaff;
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-weight: bold;
+
+        &:hover {
+          background: #008fcc;
+        }
+      }
+    }
+  }
+}
