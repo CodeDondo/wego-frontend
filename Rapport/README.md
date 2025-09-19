@@ -20,7 +20,7 @@ MySQL password: 1234
 
 ## Indledning:
 
-Jeg har fra den 15. september til og med den 19. september arbejdet med min svendeprøve - WeGo som er en hjemmeside, hvor man kan pendle til og fra med andre chaufføre. På selve siden er der vejledning om hvordan man skal booke en rejse. I følge opgaven har jeg brugt frameworket React med node.js, derudover brugt MySQL, Postman, SCSS, Javascript og forskellige NPM pakker til at bygge siden.
+Jeg har fra den 15. september til og med den 19. september arbejdet med min svendeprøve - WeGo som er en hjemmeside, hvor man kan pendle til og fra med andre chauffører. På selve siden er der vejledning om hvordan man skal booke en rejse. I følge opgaven har jeg brugt frameworket React med node.js, og derudover brugt MySQL, Postman, SCSS, Javascript og forskellige NPM pakker til at bygge siden.
 
 ---
 
@@ -37,11 +37,11 @@ Jeg har fra den 15. september til og med den 19. september arbejdet med min sven
 
 ### Vurdering af egen indsats og gennemførelse af prøven
 
-Jeg har arbejdet fra cirka klokken 9-10 frem til 14 hver dag, i starten sætter jeg hele min boilerplate om med backend og det sker uden problemer. Desværre kommer der allerede komplikationer fra start og jeg bliver meget frustreret og begynder at haste tingene lidt. Jeg ville ønske jeg fra start måske begyndte gå væk fra problemet og så komme tilbage til det, da jeg ofte tænker klare når jeg lige får samlet mig selv igen. Men efter alt så har jeg formået at kunne fremvise et godt stykke arbejde ud fra de koder jeg har lavet og været meget stolte i den måde jeg har bygget det op på. Måske havde jeg gjort noget anderledes som ville gøre min kode mere effektiv, men alt i alt så er det en kode jeg kan stå inde for. Jeg havde også problemet med branching i selve github, det valgte jeg dernæst at gå fra. Jeg er ikke den store organisator indenfor github, når man snakker om 1 mands team. Derfor valgte jeg også bare at commit direkte til main efter.
+Jeg har arbejdet fra cirka klokken 9 frem til 15.30 hver dag. I starten sætter jeg hele min boilerplate op med backend og det sker uden problemer. Desværre kommer der allerede komplikationer fra start og jeg bliver meget frustreret og begynder at haste tingene lidt. Jeg ville ønske jeg fra start måske begyndte gå væk fra problemet og så komme tilbage til det, da jeg ofte tænker klarere når jeg lige får samlet mig selv igen. Men alt i alt så har jeg formået at kunne fremvise et godt stykke arbejde ud fra de koder jeg har lavet og været meget stolt af den måde jeg har bygget det op på. Måske ville jeg have gjort noget anderledes som kunne gøre min kode mere effektiv, men alt i alt så er det en kode jeg kan stå inde for. Jeg havde også problemet med branching i selve github, det valgte jeg dernæst at gå fra. Jeg er ikke den store organisator indenfor github, når man snakker om 1 mands team. Derfor valgte jeg også bare at commit direkte til main fremefter.
 
 ### Argumentation for de valg jeg har truffet
 
-Først tænkte jeg at jeg styler samtidig med at bygge koden op funktionsmæssigt. Men da jeg ikke er den bedste til at style, ændrede jeg strategien til at gå efter den funktionelle del og så tage styling til sidst, da jeg ved jeg er bedst til at bygge en kode funktionelt mæssigt. Da jeg f.eks. byggede navbaren har jeg leget lidt med useState til at ændre tilstands variabler til isMobile og isVisible, en kode jeg er stolt af da den viser virkelig hvordan det er useState fungere blandt andet med virkning fra useEffect også, så siden blev lige pludselig meget lettere at gøre responsive fra mobile til desktop. De steder, hvor jeg måske har prioteret mindre er ikke fordi jeg ikke ved hvordan det laves, det er fordi jeg har prioteret tiden ud fra mine evner - f.eks. at gjort LiftList og ListDetails færdig. I følge opgaven har jeg benyttet mig at nogle gode samtaler med andre medstuderende når jeg har siddet fast eller set nogle af mine gamle koder igennem, hvilket har fungeret rigtig godt.
+Først tænkte jeg at jeg styler samtidig med at bygge koden op funktionsmæssigt. Men da jeg ikke er den bedste til at style, ændrede jeg strategien til først og fremmest at gå efter den funktionelle del og så tage styling til sidst, da jeg ved jeg er bedre til at bygge en kode funktionelt mæssigt. Da jeg f.eks. byggede navbaren har jeg leget lidt med useState for at ændre tilstands variabler til isMobile og isVisible, en kode jeg er stolt af, da den viser virkelig hvordan det er useState fungerer, blandt andet med virkning fra useEffect også, så siden blev lige pludselig meget lettere at gøre responsive fra mobile til desktop. De steder, hvor jeg måske har prioteret mindre er ikke fordi jeg ikke ved hvordan det laves, det er fordi jeg har prioteret tiden ud fra hvad jeg syntes det var realistisk at nå i bund - f.eks. at gøre LiftList og ListDetails færdig. I løbet af opgaven har jeg benyttet mig at nogle gode samtaler med andre medstuderende, når jeg har siddet fast eller set nogle af mine gamle koder igennem, hvilket har fungeret rigtig godt.
 
 ### Redegørelse for oprindelsen af de forskellige kodeelementer
 
@@ -64,7 +64,7 @@ Til eksamen vil jeg gerne forklare min opbygning af mit component HowToUse, og h
 
 ### Konklusion
 
-Jeg synes svendeprøven har været udfordrende på den gode måde. Normalt er jeg en person der frygter eksamen rigtig meget, men jeg føler jeg virkelig har været i dybde med min kode også forståelsen af den og har hjulpet mig med at kunne etablere siden på den måde jeg har set den i mit hovede. Det kan godt være stylingen ikke har været 100% den måde det skulle have set ud, men jeg kan mærke der også er plads til forbedring i fremtiden med hensyn til at lære noget nyt. Alt i alt en rigtig god opgave at udfordre sig selv på.
+Jeg synes svendeprøven har været udfordrende på den gode måde. Normalt er jeg en person der frygter eksamen rigtig meget, men jeg føler jeg virkelig har været i dybde med min kode også forståelsen af den og det har hjulpet mig med at kunne etablere siden på den måde jeg har set den i mit hovede. Det kan godt være stylingen ikke har været 100% den måde det skulle have set ud, men jeg kan mærke der også er plads til forbedring i fremtiden med hensyn til at lære noget nyt. Alt i alt en rigtig god opgave at udfordre sig selv på.
 
 ### Eventuelle bilag
 
