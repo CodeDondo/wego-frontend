@@ -48,7 +48,10 @@ export const Main = () => {
             />
           );
         })}
+        
+        <h1 className={styles.heroText}>Vi gør byen grønnere</h1>
       </div>
+
       <HowToUse isMobile={isMobile} />
     </main>
   );
