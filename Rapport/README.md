@@ -11,8 +11,8 @@ Morten Redondo Winther, Hold nr. H1WE080124
 
 
 
-MySQL user: root
-MySQL password: 1234
+Login username: info@webudvikler.dk
+Login password: password
 
 
 ---
